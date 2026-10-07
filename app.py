@@ -11,6 +11,12 @@ def index():
     return jsonify(message="Simple Items API", endpoints=["/api/items"])
 
 
+
+
+
+
+
+
 @app.get("/api/items")
 def list_items():
     return jsonify(list(items.values()))
